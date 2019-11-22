@@ -12,6 +12,7 @@ class Test extends Base_Controller{
     function index(){
 
         //panggil helper
-        echo  $this->base_url("namafilenya.php");
+        // echo  $this->base_url("namafilenya.php");
+        echo "test controller";
     }
 }
