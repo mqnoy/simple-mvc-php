@@ -16,7 +16,8 @@ class Dispatcher
         echo "this url => ";
         var_dump($url);
         echo "<br>";
-        if (file_exists("app/controller/" . ucwords($url[0]) . ".php")) {
+        $rootdir = dirname(dirname(__FILE__)) . '/';
+        if (file_exists($rootdir."app/controller/" . ucwords($url[0]) . ".php")) {
             # code...
             echo "1 masuk sini  " . $this->currentController;
             echo "\n<br>";

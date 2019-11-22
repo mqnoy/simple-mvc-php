@@ -15,12 +15,11 @@ class Autoload{
             // echo "Calling" . __FUNCTION__ . " in " . __CLASS__ . "\n<br/>";
             echo "this var class in autooad => $class";
             $filename=$class.".php";
-            $file = ROOT .''.$filename;
-            if (!is_readable($file)) {
+            if (!is_readable($filename)) {
                 # code...
                 return false;
             }
-            include_once $file;
+            include_once $filename;
         });
 
         
