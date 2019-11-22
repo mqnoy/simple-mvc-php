@@ -3,7 +3,7 @@
 namespace System\Core;
 
 
-class Route
+class Dispatcher
 {
 
     private $currentController = 'Home';
