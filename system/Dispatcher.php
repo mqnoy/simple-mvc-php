@@ -32,6 +32,7 @@ class Dispatcher
         $this->currentController = "App\\Controller\\{$this->currentController}";
         $this->currentController = new  $this->currentController;
 
+        var_dump($this->currentController);
         if (isset($url[1])) {
             $this->currentMethod = $url[1];
             unset($url[1]);
