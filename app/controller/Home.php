@@ -20,6 +20,8 @@ class Home extends Base_Controller{
             'data_kelas ' => $this->m_home->readKelas()
         );
 
+        $dir =  dirname("__DIR__");
+        var_dump($dir);
         //panggil library
         $this->l_example->writeMsg(
             "panggil library disini bisa!"
