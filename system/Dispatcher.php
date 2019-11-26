@@ -29,7 +29,7 @@ class Dispatcher
         }
 
         //instansiasi class
-        $this->currentController = "App\\Controller\\{$this->currentController}";
+        // $this->currentController = "App\\Controller\\{$this->currentController}";
         $this->currentController = new  $this->currentController;
 
         var_dump($this->currentController);
