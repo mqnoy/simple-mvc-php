@@ -1,7 +1,4 @@
 <?php
-namespace App\Controller;
-
-use System\Core\Base_Controller;
 
 class Test extends Base_Controller{
 

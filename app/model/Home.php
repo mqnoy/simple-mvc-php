@@ -1,6 +1,4 @@
 <?php
-namespace App\Model;
-use System\Core\DB;
 /**
  * 
  *  create read update delete

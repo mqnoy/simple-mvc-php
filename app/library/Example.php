@@ -3,7 +3,7 @@
  * example library
  * 
  */
-namespace App\Library;
+
  class Example{
 
     function __construct()
