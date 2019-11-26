@@ -8,7 +8,7 @@ class Autoload{
         
         spl_autoload_register(function($class){
             $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
-	        include_once $_SERVER['DOCUMENT_ROOT'] . '/class/' . $class . '.php';
+	        include_once $_SERVER['DOCUMENT_ROOT'] . '/controller/' . $class . '.php';
         });
         
 
