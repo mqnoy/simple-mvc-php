@@ -10,7 +10,7 @@ class Autoload{
             // echo "Calling" . __FUNCTION__ . " in " . __CLASS__ . "\n<br/>";
             echo "this var class in autooad => $class";
             $newclass = str_replace("\\","/",$class);
-            include_once strtolower($newclass).".php";
+            include_once ucwords($newclass).".php";
         });
         
 
