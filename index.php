@@ -1,9 +1,9 @@
 <?php
-require_once 'app/config/config.php';
-require 'system/Autoload.php';
+require_once 'App/config/config.php';
+require 'System/Autoload.php';
 
-require 'system/Dispatcher.php';
+require 'System/Dispatcher.php';
 
-new system\core\Autoload();
+new System\Core\Autoload();
 
-new system\core\Dispatcher();
+new System\Core\Dispatcher();
