@@ -7,12 +7,8 @@ class Autoload{
     {
         
         spl_autoload_register(function($class){
-            $call_class = str_replace("\\","/",$class);
-            // $replace_slash = str_replace("\\","/",$class);
-            // $location_class = str_replace(__CLASS__,"",$replace_slash);
-            // $call_class = $location_class."".__CLASS__;
-
-            include_once $call_class.".php";
+            $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+	        include_once $_SERVER['DOCUMENT_ROOT'] . '/class/' . $class . '.php';
         });
         
 
