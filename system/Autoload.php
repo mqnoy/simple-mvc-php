@@ -6,7 +6,7 @@ class Autoload{
     {
         
         spl_autoload_register(function($class){
-	        include_once $class . '.php';
+	        include_once "controller/{$class}". '.php';
         });
         
 
