@@ -1,5 +1,5 @@
 <?php
-require_once './App/config/config.php';
+require_once 'app/config/config.php';
 require 'System/Autoload.php';
 
 require 'System/Dispatcher.php';
