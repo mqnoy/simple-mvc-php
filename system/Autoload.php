@@ -12,7 +12,7 @@ class Autoload{
             // $location_class = str_replace(__CLASS__,"",$replace_slash);
             // $call_class = $location_class."".__CLASS__;
 
-            include_once strtolower($call_class).".php";
+            include_once $call_class.".php";
         });
         
 
