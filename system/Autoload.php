@@ -5,7 +5,6 @@ class Autoload{
     function __construct()
     {
         
-        spl_autoload_register('controller_loader');
         
 
         
@@ -25,3 +24,7 @@ class Autoload{
         include_once "system/core/{$class}". '.php';
     }
 }
+spl_autoload_register('system_loader');
+spl_autoload_register('controller_loader');
+spl_autoload_register('model_loader');
+spl_autoload_register('library_loader');
