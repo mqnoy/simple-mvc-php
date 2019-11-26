@@ -4,7 +4,7 @@
 class Dispatcher
 {
 
-    private $currentController = 'Home';
+    private $currentController = 'home';
     private $currentMethod = 'index';
     private $params = [];
 
