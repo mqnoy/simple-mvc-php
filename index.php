@@ -5,6 +5,6 @@ require 'system/Dispatcher.php';
 require 'system/Autoload.php';
 
 
-new System\Core\Autoload();
+new Autoload();
 
-new System\Core\Dispatcher();
+new Dispatcher();
