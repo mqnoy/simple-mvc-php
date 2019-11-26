@@ -21,11 +21,11 @@ class Dispatcher
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
         }
-
+        var_dump($this->currentController);
         //instansiasi class
         $this->currentController = new  $this->currentController;
 
-        var_dump($this->currentController);
+        
         if (isset($url[1])) {
             $this->currentMethod = $url[1];
             unset($url[1]);
