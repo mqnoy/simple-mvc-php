@@ -9,7 +9,8 @@ class Autoload{
         spl_autoload_register(function($class){
             // echo "Calling" . __FUNCTION__ . " in " . __CLASS__ . "\n<br/>";
             echo "this var class in autooad => $class";
-            include_once strtolower($class).".php";
+            $newclass = str_replace("\\","/",$class);
+            include_once strtolower($newclass).".php";
         });
         
 
