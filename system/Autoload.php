@@ -5,7 +5,7 @@ class Autoload{
     function __construct()
     {
         
-        spl_autoload_register($this->controller_loader);
+        spl_autoload_register('controller_loader');
         
 
         
